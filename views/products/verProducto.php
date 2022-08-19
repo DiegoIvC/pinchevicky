@@ -53,6 +53,7 @@
   <?php
   use MyApp\Query\Select;
   require("../../vendor/autoload.php");
+  require('../scripts/validarUser.php');
   $query = new Select();
   require('../components/navbar.php');
 
@@ -275,7 +276,14 @@ img {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1); } }
-</style>
+</style><figure class="text-center">
+  <blockquote class="blockquote">
+    <p>BZ shop</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Bazar <cite title="Source Title">A tu servicio</cite>
+  </figcaption>
+</figure>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
