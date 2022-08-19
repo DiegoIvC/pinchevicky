@@ -42,24 +42,21 @@
   <body>
 
   <?php
-
-require('../scripts/validarUser.php');
     require('../components/navbar.php');
-     
-    use MyApp\Query\Select;
-    $queryS=new Select();
-    $id=$_SESSION['id'];
+      require('../scripts/validarUser.php');
+   
+    $correo=$_SESSION["correo"];
     $nombre=$_SESSION["nombre"];
     $apellido=$_SESSION["apellidos"];
     $tel=$_SESSION["tel"];
-    $correo2="SELECT correo FROM usuario WHERE id_usr='$id'";
- $correo3=  $queryS->seleccionar($correo2);
+    
+   
   ?> 
  <div class="container">
        <div class="row">
          <div class=" col-md-12 perfil">
           <div class="row"> 
-          <div class="col-2"><br><img src="../scripts/img/585e4beacb11b227491c3399.png" style="width: 70%;">
+          <div class="col-2"><br><img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" style="width: 70%;">
           </div>
           <div class="col-10 usuario">
             <br><?php echo "$nombre $apellido"; ?> 
@@ -87,11 +84,8 @@ require('../scripts/validarUser.php');
                  </div> <br><div class="row" style="font-size:20px;">
                    <div class="col-9">
                      <strong>Correo electronico: </strong><?php 
-                       foreach($correo3 as $correo)
-                       echo $correo->correo;
+                       echo "$correo";
                       ?>
-                   </div> <div class="col-3">
-                     <a href="EditarCorreo.php" class="ref btn btn-success" style="color:white">Editar</a>
                    </div>
                   
               </div> <br>

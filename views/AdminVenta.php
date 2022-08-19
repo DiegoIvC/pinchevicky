@@ -48,11 +48,6 @@
   <body>
   <?php
   require ('components/navbar.php');
-  
-    if($_SESSION["nombre"]==""&& $_SESSION['rol']!='0')
-{
-  echo "<script> window.location.href='http://localhost/pinchevicky/index.php'</script>";
-}
 ?>
             
     <div class="container ">

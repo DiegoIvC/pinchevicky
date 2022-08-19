@@ -59,7 +59,6 @@
 
 use MyApp\Query\Select;
 require("../../vendor/autoload.php");
-require('../scripts/validarUser.php');
 $query = new Select();
 $cve=$_GET['cve_prod'];
 $producto=$_GET['cve_prod'];
@@ -76,7 +75,7 @@ foreach ($id as $dato) {
  <nav class="nav justify-content-center navbar-dark bg-dark ">
               <a class="nav-link disabled" href="">Confirmar Compra</a>
               <?php
-                echo "<a class='nav-link clr-blanco' href='http://localhost/pinchevicky/index.php'>Inicio </a>";
+                echo "<a class='nav-link clr-blanco' href='../indice.php'>Inicio </a>";
                 echo "<a class='nav-link clr-blanco' href='verProducto.php?cve_prod=".$producto."'>Atras </a>";
               ?>
             </nav>
@@ -121,7 +120,7 @@ foreach ($id as $dato) {
           }
           else{
             echo "Producto Comprado, Vuelve al inicio <br>";
-            echo "<a class='' href='http://localhost/pinchevicky/index.php'>
+            echo "<a class='' href='http://localhost/pinchevicky/views/indice.php'>
               
             <input class='btn btn-dark' type='submit' value='Regresar'>
                 
