@@ -61,7 +61,7 @@
   <nav class="nav justify-content-center navbar-dark bg-dark ">
               <a class="nav-link disabled" href="#">Reporte de Ventas</a>
               <a class="nav-link clr-blanco" href="AdminProd.php">Regresar</a>
-              <a class="nav-link clr-blanco" href="../index.php">Inicio</a>
+              <a class="nav-link clr-blanco" href="http://localhost/pinchevicky/">Inicio</a>
             </nav>
 <br><br>
 
