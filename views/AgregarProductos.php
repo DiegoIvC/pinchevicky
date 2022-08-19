@@ -58,7 +58,7 @@ use MyApp\Query\Select;
             <nav class="nav justify-content-center navbar-dark bg-dark ">
               <a class="nav-link disabled" href="#">Agregar Productos</a>
               <a class="nav-link clr-blanco" href="AdminProd.php">Regresar</a>
-              <a class="nav-link clr-blanco" href="http://localhost/pinchevicky/">Inicio</a>
+              <a class="nav-link clr-blanco" href="../index.php">Inicio</a>
             </nav>
 
             <div class="container" style="width: 40%;">

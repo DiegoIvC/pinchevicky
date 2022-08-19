@@ -52,18 +52,17 @@
 
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="http://localhost/pinchevicky/index.php">BZ shop</a>
+    <a class="navbar-brand" href="http://localhost/pinchevicky/views/indice.php">BZ shop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active"  aria-current="page" href="http://localhost/pinchevicky/index.php">Inicio</a>
+          <a class="nav-link active"  aria-current="page" href="http://localhost/pinchevicky/views/indice.php">Inicio</a>
        
         <!-- botones del user-->
         <?php
-        
          use MyApp\Query\Select;
 
          
@@ -71,10 +70,8 @@
         require_once(__ROOT__.'../../vendor/autoload.php');
 
      
-         
-       if (!isset($_SESSION)) {
-        session_start();
-       }
+          session_start();
+          
           
         ?>
         <?php 
@@ -89,7 +86,7 @@
                       </a> 
                       <ul class='dropdown-menu bg-dark ' aria-labelledby='navbarDropdown'>";
                       
-                     
+
               foreach($reg as $value)
               {
                 
@@ -108,13 +105,13 @@
                     Administrar
                     </a> 
                     <ul class='dropdown-menu bg-dark ' aria-labelledby='navbarDropdown'>
-                    <li><a class='dropdown-item clr-blanco' href='http://localhost/pinchevicky/views/AdminProd.php'>Administrar Productos</a></li>
+                    <li><a class='dropdown-item clr-blanco' href='AdminProd.php'>Administrar Productos</a></li>
                       <li><hr class='dropdown-divider'></li>
-                      <li><a class='dropdown-item clr-blanco' href='http://localhost/pinchevicky/views/AdminCategorias.php'>Administrar Categorias</a></li>
+                      <li><a class='dropdown-item clr-blanco' href='AdminCategorias.php'>Administrar Categorias</a></li>
                       <li><hr class='dropdown-divider'></li>
-                      <li><a class='dropdown-item clr-blanco' href='http://localhost/pinchevicky/views/AdminVenta.php'>Administrar Ventas</a></li>
+                      <li><a class='dropdown-item clr-blanco' href='AdminVenta.php'>Administrar Ventas</a></li>
                       <li><hr class='dropdown-divider'></li>
-                      <li><a class='dropdown-item clr-blanco' href='http://localhost/pinchevicky/views/AdminClientes.php'>Clientes Registrados</a></li>
+                      <li><a class='dropdown-item clr-blanco' href='AdminClientes.php'>Clientes Registrados</a></li>
                     </ul>";
              echo "</li> ";
                 }
@@ -141,13 +138,13 @@
                             <form class='d-flex' method='GET' action='http://localhost/pinchevicky/views/cliente/verperfil.php?'>
                                 
                             <a class='dropdown-item clr-blanco' 
-                            href='http://localhost/pinchevicky/views/cliente/verperfil.php'
+                            href='http://localhost/pinchevicky/views/cliente/verperfil.php?rol='
                             
                             >
                             Ver Perfil
                             </a></li>
                             <li><a class='dropdown-item clr-blanco' 
-                            href='http://localhost/pinchevicky/views/cliente/HistorialCompras.php'>
+                            href=''>
                             Historial de compras</a></li>
                             <li><a class='dropdown-item clr-blanco' 
                             href='http://localhost/pinchevicky/views/scripts/cerrar.php'>
@@ -159,7 +156,7 @@
                           </form> ";
                         }
                  else {
-                    echo"<a class='btn btn-outline-primary' href='http://localhost/pinchevicky/views/indice.php'>Ingresar</a>";
+                    echo"<a class='btn btn-outline-primary' href='http://localhost/pinchevicky/index.php?rol='>Ingresar</a>";
                 }
                 
             ?>

@@ -53,12 +53,7 @@
             <nav class="nav justify-content-center navbar-dark bg-dark ">
               <a class="nav-link disabled" href="">Administrar Productos</a>
               <?php
-              session_start();
-              if($_SESSION["nombre"]==""&& $_SESSION['rol']!='0')
-          {
-            echo "<script> window.location.href='http://localhost/pinchevicky/index.php'</script>";
-          }
-                echo "<a class='nav-link clr-blanco' href='http://localhost/pinchevicky/'>Inicio</a>";
+                echo "<a class='nav-link clr-blanco' href='indice.php?rol=$ROL'>Inicio</a>";
               ?>
             </nav>
     <div class="container ">

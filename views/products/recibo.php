@@ -54,16 +54,12 @@ $fecha_actual=date("Y-m-d H:i:s");
 $orden= "INSERT INTO orden (orden.fecha_orden, orden.usr) VALUES ('$fecha_actual','$user')";
 
 $insert->ejecuta($orden);
-
-
 foreach ($id as $dato) {
     $existencia= $dato->exitencia-1;
     $update= "UPDATE productos SET productos.exitencia='$existencia' WHERE productos.cve_prod='$dato->cve_prod'";
     $insert->ejecuta($update);
     $const = "SELECT * FROM orden where orden.usr= '$user' order by reg DESC;";
     $orden = $query->seleccionar($const);
-    $detalle= "INSERT INTO detalle_orden (detalle_orden.orden,detalle_orden.producto, detalle_orden.unidades) VALUES ('".$orden[0]->reg."','$producto','1')";
-    $insert->ejecuta($detalle);
 ?>
 
 <div class="container"style="margin-top:10pt;">

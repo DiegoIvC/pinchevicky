@@ -51,16 +51,12 @@
   <body>
   <?php
 
-    session_start();
-    if($_SESSION["nombre"]==""&& $_SESSION['rol']!='0')
-{
-  echo "<script> window.location.href='http://localhost/pinchevicky/index.php'</script>";
-}
+
 ?>
 
             <nav class="nav justify-content-center navbar-dark bg-dark ">
               <a class="nav-link disabled" href="">Administrar Productos</a>
-              <a class='nav-link clr-blanco' href='http://localhost/pinchevicky/'>Inicio</a>
+              <a class='nav-link clr-blanco' href='indice.php'>Inicio</a>
             </nav>
     <div class="container ">
             <h4></h4>
