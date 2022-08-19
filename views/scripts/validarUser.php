@@ -1,9 +1,8 @@
 <?php
-
-if($_SESSION['nombre']==NULL)
+ session_start();
+if($_SESSION["nombre"]=="")
 {
-  echo "<script> window.location.href='http://localhost/pinchevicky/views/indice.php?rol='</script>";
-  
+  echo "<script> window.location.href='http://localhost/pinchevicky/index.php'</script>";
 }
 
 
