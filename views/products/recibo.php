@@ -79,7 +79,7 @@ foreach ($id as $dato) {
 </div>
 
 <h1>Recoge tu compra con clave de orden: <?php echo $orden[0]->reg ?>  </h1> 
-recibido:
+Orden realizada el:
 <?php
   echo $fecha_actual;
 }
