@@ -80,7 +80,7 @@
               <?php
                 echo "<a class='nav-link clr-blanco' href='AdminProd.php'>Regresar</a>";
                 
-                echo "<a class='nav-link clr-blanco' href='indice.php'>Inicio</a>";
+                echo "<a class='nav-link clr-blanco' href='http://localhost/pinchevicky/'>Inicio</a>";
               ?>
               
             </nav>
