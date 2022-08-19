@@ -70,7 +70,7 @@
   require ('components/navbar.php');
 ?>
             <!-- Tabla select -->
-            <h1 align="center">Ordenes Activas</h1>
+            <h1 align="center">Ordenes pendientes</h1>
                 <br>
             <div class="row">
             <div class="containermd-6 offset-lg-4">              
@@ -78,7 +78,7 @@
               </div>
               <form class="d-flex">
                 <button class="btn btn-outline-success" name="refresh" type="submit">Refrescar</button>
-                <input onkeyup="$enviar" class="form-control me-2" name="busqueda" type="search" placeholder="Search" aria-label="Search">
+                <input onkeyup="$enviar" class="form-control me-2" name="busqueda" type="search" placeholder="Escribe el numero de orden, el producto de la orden, etc." aria-label="Search">
                 <button class="btn btn-outline-success" name="enviar" type="submit">Buscar</button>
               </form>
             </div>
@@ -150,14 +150,15 @@
                   foreach($tabla as $registros)
                   {
                     
-                    echo "<tr>";
+                    echo "<tr'>";
                     echo "<td> $registros->PRODUCTO</td>";
                     echo "<td><h3>$ $registros->PRECIO</h3></td>";
                     echo "<td> $registros->FECHA_DE_VENTA </td>";
                     echo "<td> <h4>$registros->No_ORDEN </h4></td>";
                     echo "<td> $registros->CLIENTE </td>";
-                  echo "</td>
-                        </tr>";
+                    
+                    echo "<td> <a href='VerOrden.php?orden=$registros->No_ORDEN'>Click aqui para ir a la orden</a></td>
+                          </tr>";
                   }
                   echo "</tbody>
                   </table>";
@@ -203,20 +204,20 @@
                     <th> Fecha de orden </th>
                     <th> No_Orden </th>
                     <th> Cliente </th>
+                    <th> Link </th>
                     </tr>
                     </thead>
                     <tbody>";
                     /* foreach donde manda a traer los datos*/
                     foreach($tabla as $registros)
                     {
-                      
                       echo "<tr>";
                       echo "<td> $registros->PRODUCTO</td>";
                       echo "<td><h2 >$ $registros->PRECIO</h2></td>";
                       echo "<td> $registros->FECHA_DE_VENTA </td>";
                       echo "<td> <h4>$registros->No_ORDEN </h4></td>";
                       echo "<td> $registros->CLIENTE </td>";
-                    echo "</td>
+                    echo "<td> <a href='VerOrden.php?orden=$registros->No_ORDEN'>Click aqui para ir a la orden</a></td>
                           </tr>";
                     }
                     echo "</tbody>

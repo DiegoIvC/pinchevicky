@@ -109,7 +109,7 @@
                       <li><hr class='dropdown-divider'></li>
                       <li><a class='dropdown-item clr-blanco' href='AdminCategorias.php'>Administrar Categorias</a></li>
                       <li><hr class='dropdown-divider'></li>
-                      <li><a class='dropdown-item clr-blanco' href='AdminVenta.php'>Administrar Ventas</a></li>
+                      <li><a class='dropdown-item clr-blanco' href='AdminVenta.php'>Administrar Ordenes</a></li>
                       <li><hr class='dropdown-divider'></li>
                       <li><a class='dropdown-item clr-blanco' href='AdminClientes.php'>Clientes Registrados</a></li>
                     </ul>";

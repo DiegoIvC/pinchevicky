@@ -57,7 +57,7 @@
                 <hr>
                 <a href='../views/Ventas.php' class='list-group-item list-group-item-action flex-column align-items-start'>
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Ver Ventas</h5>
+                        <h5 class="mb-1">Ver Ordenes pendientes</h5>
                         <small><img src="../src/paginaimg/moda.png" alt="" width="20px"></small>
                     </div>
                     <p class="mb-1">Click aqui para ver ventas</p>
